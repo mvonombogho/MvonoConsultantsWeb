@@ -1,0 +1,89 @@
+@import "config";
+@import "home";
+@import "about";
+@import "clients";
+@import "services";
+@import "contact";
+@import "footer";
+body {
+  background: $primary-color;
+  color: $textPrimary-color;
+  height: 100vh;
+  font-family: "poppins", sans-serif;
+  line-height: 2rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  @include ExtraBold;
+  color: $textSecondary-color;
+  font-size: 2rem;
+}
+h2 {
+  @include semiBold;
+  color: $textSecondary-color;
+  font-size: 1rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $textPrimary-color;
+}
+header {
+  width: 100%;
+  padding: 1rem;
+  background: url();
+}
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: $textSecondary-color;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  color: $textPrimary-color;
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* fixed nav */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $textPrimary-color;
+  .primary-navigation {
+    a {
+      color: $primary-color;
+    }
+    a:hover {
+      color: $textSecondary-color;
+    }
+  }
+}
