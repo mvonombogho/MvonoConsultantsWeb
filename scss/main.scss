@@ -48,7 +48,7 @@ header {
   height: 2rem;
   display: grid;
   place-items: center;
-  @include borderRadius;
+  border-radius: 3px;
   color: $textPrimary-color;
   animation: bounce 2s ease-in-out infinite;
   visibility: hidden;

@@ -37,16 +37,16 @@ a:hover::after {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 32, 32, 0.5)), to(rgba(0, 0, 0, 0.3))), url("/MvonoConsultants-repo/dist/img/img1.png");
-  background: linear-gradient(rgba(24, 32, 32, 0.5), rgba(0, 0, 0, 0.3)), url("/MvonoConsultants-repo/dist/img/img1.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 32, 32, 0.5)), to(rgba(0, 0, 0, 0.3))), url("/dist/img/img1.png");
+  background: linear-gradient(rgba(24, 32, 32, 0.5), rgba(0, 0, 0, 0.3)), url("/dist/img/img1.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* navbar */
   /* fixed nav */
+  /*banner*/
 }
 
 #home nav {
-  background: yellow;
   padding: 1rem 1.5rem;
 }
 
@@ -64,7 +64,8 @@ a:hover::after {
 }
 
 #home nav .nav-center .nav-header .logo {
-  height: .5rem;
+  height: 1.8rem;
+  z-index: 1000;
 }
 
 #home nav .nav-center .nav-header .nav-toggle {
@@ -101,7 +102,43 @@ a:hover::after {
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+
+#home .banner .container {
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 1rem;
+}
+
+#home .banner .container .hero {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 560px) {
+  #home {
+    /* banner */
+  }
+  #home nav {
+    padding: 0.5rem 1rem;
+  }
+  #home nav .nav-center .nav-header .logo {
+    height: 1.2rem;
+  }
+  #home .banner .container {
+    width: 80%;
+    margin-top: 10%;
+  }
+  #home .banner .container .hero {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+  }
 }
 
 #aboutUs {
@@ -630,7 +667,7 @@ header {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  border-radius: 3rem;
+  border-radius: 3px;
   color: #fff;
   -webkit-animation: bounce 2s ease-in-out infinite;
           animation: bounce 2s ease-in-out infinite;
