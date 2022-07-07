@@ -1,0 +1,62 @@
+$primary-color:#371B58;
+$secondary-color:#F1E9E9;
+$textSecondary-color:#FF7600;
+$textPrimary-color:#fff;
+
+//resets
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+@mixin bold{
+    font-weight: 700;
+}
+
+@mixin ExtraBold{
+    font-weight:800; 
+}
+@mixin semiBold{
+    font-weight:600; 
+}
+@mixin Medium{
+    font-weight:500; 
+}
+@mixin Regular{
+    font-weight:400; 
+}
+
+@mixin borderRadius{
+    border-radius: 3rem;
+}
+@mixin gap{
+    gap: 1rem;
+}
+@mixin blur{
+    backdrop-filter: blur(2rem);
+}
+@mixin transition{
+    transition: all 0.3s linear;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    margin-inline-end: 0.5rem;
+
+}
+a::after{
+    content: "";
+    position: absolute;
+    background: $textSecondary-color;
+    height:3px;
+    width: 0 ;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+a:hover{
+    color: $primary-color;
+}
+a:hover::after{
+    width: 100% ;
+}

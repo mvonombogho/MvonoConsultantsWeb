@@ -1,0 +1,46 @@
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  //for mobile phones
+  @media (max-width: 560px) {
+    #services {
+      height: 60vh;
+      h1 {
+        font-size: 1.8rem;
+      }
+      .services_list {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+      }
+    }
+  }
+  
+  //for ipads and tablets
+  @media(min-width:561px){
+      #services{
+          height: 80vh;
+      }
+  }
+  
+  
+  //for screens with a min width of 1024 pixels
+  @media(min-width:1024px){
+      #services{
+          height: 80vh;
+          h1{
+              font-size: 2rem;
+          }
+          .services_list{
+              margin-top: 2rem;
+              font-size: 1.3rem;
+              li{
+                padding-bottom: .7rem;
+              }
+          }
+      }
+  }
