@@ -32,11 +32,7 @@ a {
   text-decoration: none;
   color: $textPrimary-color;
 }
-header {
-  width: 100%;
-  padding: 1rem;
-  background: url();
-}
+
 
 .top-link {
   font-size: 1.25rem;
@@ -71,19 +67,13 @@ header {
   }
 }
 
-/* fixed nav */
-.fixed-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: $textPrimary-color;
-  .primary-navigation {
-    a {
-      color: $primary-color;
-    }
-    a:hover {
-      color: $textSecondary-color;
-    }
+//for mobile phones
+@media(max-width:560px){
+  .top-link{
+    font-size: .8rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 2.5px;
+    bottom: 1rem;
   }
 }

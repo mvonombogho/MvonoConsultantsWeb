@@ -16,14 +16,15 @@
   //for mobile phones
   @media (max-width: 560px) {
     #clients {
-      height: 45vh;
+      height: 65vh;
       h1 {
         font-size: 1.8rem;
+        margin-top: 1rem;
       }
       i {
         font-size: 1.5rem;
         position: absolute;
-        top: 6rem;
+        top: 7.5rem;
       }
       .fa-arrow-left {
         left: 5%;

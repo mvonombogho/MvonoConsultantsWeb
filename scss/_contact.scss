@@ -5,7 +5,7 @@
     width: auto;
     height: 90vh;
     h1 {
-      color: $primary-color;
+      color: $primary-color
     }
     p {
       color: $primary-color;
@@ -65,8 +65,11 @@
   //for mobile phone
   @media (max-width: 560px) {
     #contact {
+      padding: 0;
+      height: 135vh;
       h1 {
         font-size: 1.8rem;
+        padding-top: 1rem;
       }
       p {
         font-size: 0.8rem;
@@ -75,7 +78,7 @@
         margin-top: 1rem;
         width: 100%;
         .contact_form {
-          width: 70%;
+          width: 85%;
           h3 {
             font-size: 0.8rem;
           }

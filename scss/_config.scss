@@ -2,7 +2,7 @@ $primary-color:#371B58;
 $secondary-color:#F1E9E9;
 $textSecondary-color:#FF7600;
 $textPrimary-color:#fff;
-
+$dark-purple:rgb(24, 1, 33);
 //resets
 *{
     box-sizing: border-box;
@@ -44,19 +44,19 @@ a{
     margin-inline-end: 0.5rem;
 
 }
-a::after{
-    content: "";
-    position: absolute;
-    background: $textSecondary-color;
-    height:3px;
-    width: 0 ;
-    left: 0;
-    bottom: -4px;
-    transition: 0.3s;
-}
-a:hover{
-    color: $primary-color;
-}
-a:hover::after{
-    width: 100% ;
-}
+// a::after{
+//     content: "";
+//     position: absolute;
+//     background: $textSecondary-color;
+//     height:3px;
+//     width: 0 ;
+//     left: 0;
+//     bottom: -4px;
+//     transition: 0.3s;
+// }
+// a:hover{
+//     color: $primary-color;
+// }
+// a:hover::after{
+//     width: 100% ;
+// }

@@ -8,9 +8,10 @@
   //for mobile phones
   @media (max-width: 560px) {
     #services {
-      height: 60vh;
+      height: 100vh;
       h1 {
         font-size: 1.8rem;
+        margin-top: 1rem;
       }
       .services_list {
         margin-top: 1rem;
