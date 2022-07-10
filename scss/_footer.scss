@@ -26,7 +26,7 @@
 //for mobile
 @media (max-width: 560px) {
   .footer {
-    height: 30vh;
+    height: 10vh;
     .footer-container{
       display: flex;
       flex-direction: column;
@@ -45,6 +45,32 @@
         p{
           letter-spacing: 1px;
           font-size: .7rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+//for tablets and ipads
+@media(min-width:561px){
+  .footer {
+    .footer-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: .5rem;
+      .footer-logo{
+        width: 100%;
+        img{
+          display: block;
+          margin: auto;
+        }
+      }
+      .footer-text{
+        p{
+          letter-spacing: 1px;
+          font-size: 1rem;
           text-align: center;
         }
       }

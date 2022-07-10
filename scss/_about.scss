@@ -10,7 +10,7 @@
   //for mobile
   @media (max-width: 560px) {
     #aboutUs {
-      height: 190vh;
+      height: 70vh;
       line-height: 1.3rem;
       h1 {
         margin-top: 1rem;
@@ -35,20 +35,25 @@
   //for tablets and ipads
   @media (min-width: 561px) {
     #aboutUs {
-      height: 90vh;
+      height: 50vh;
+      line-height: 1.5rem;
       h1 {
-        font-size: 1.8rem;
+        margin-top: 1rem;
+        font-size: 2.5rem;
       }
       .aboutUs_page {
-          margin-top: 1rem;
-          width: 90%;
+        margin-top: 1rem;
+        width: 80%;
         p {
-          font-size: 0.8rem;
+          font-size: 1rem;
           margin-bottom: 1.5rem;
         }
-        .mission_statement{
-          li{
-              font-size: 0.8rem;
+        .mission_statement {
+          h2{
+            font-size: 1.5rem;
+          }
+          li {
+            font-size: 1rem;
           }
         }
       }
@@ -56,24 +61,4 @@
   }
   
   
-  @media(min-width:1024px){
-      #aboutUs{
-          height: 100vh;
-          h1{
-              font-size: 2rem;
-          }
-          .aboutUs_page{
-              p{
-                  font-size: 1.3rem;
-              }
-              .mission_statement{
-                  h2{
-                      font-size: 1.5rem;
-                  }
-                  li{
-                      font-size: 1.3rem;
-                  }
-              }
-          }
-      }
-  }
+  

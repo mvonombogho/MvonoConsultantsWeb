@@ -1,193 +1,8 @@
-// #home {
-//   /* hero */
-//   padding: 0;
-//   margin: 0;
-//   min-height: 100vh;
-//   background: linear-gradient(rgba(24, 32, 32, 0.5), rgba(0, 0, 0, 0.3)),
-//     url("/dist/img/img1.png");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   /* navbar */
-//   nav {
-//     padding: 1rem 1.5rem;
-//     .nav-center {
-//       display: flex;
-//       align-items: center;
-//       justify-content: space-between;
-//       .nav-header {
-//         // display: flex;
-//         // align-items: center;
-//         // justify-content: space-between;
-//         padding: 0;
-//         .logo {
-//           height: 1.8rem;
-//           z-index: 1000;
-//         }
-//         .nav-toggle {
-//           display: none;
-//         }
-//       }
-//       .links-container {
-//         height: auto !important;
-//         .links {
-//           display: flex;
-//           @include gap;
-//           a {
-//             color: $primary-color;
-//             @include transition;
-//           }
-//           a:hover {
-//             color: $dark-purple;
-//           }
-//         }
-//       }
-//     }
-//   }
-//   /* fixed nav */
-//   .fixed-nav {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     background-color: rgba(255, 255, 255, 0.3);
-//     backdrop-filter: blur(1rem);
-//     z-index: 3000;
-//   }
-//   /*banner*/
-//   .banner {
-//     .container {
-//       width: 50%;
-//       margin-top: 5%;
-//       margin-left: 1rem;
-//       .hero {
-//         font-size: 2rem;
-//         @include semiBold;
-//         line-height: 3rem;
-//         letter-spacing: 3px;
-//       }
-//     }
-//   }
-// }
-
-// //for mobile phones
-// @media (max-width: 560px) {
-//   #home {
-//     nav {
-//       padding: 0.5rem 1rem;
-//       .nav-center {
-//         .nav-header {
-//           display: flex;
-//           justify-content: space-between;
-//           /* hamburger toggle button */
-//           .nav-toggle {
-//             display: block;
-//             font-size: 1.5rem;
-//             color: $primary-color;
-//             background: transparent;
-//             border-color: transparent;
-//             @include transition;
-//             cursor: pointer;
-//           }
-//           .nav-toggle:hover {
-//             color: $textSecondary-color;
-//           }
-//           .logo {
-//             height: 1.2rem;
-//           }
-//         }
-//         .links-container {
-//           height: 0 !important;
-//           overflow: hidden;
-//           @include transition;
-//         }
-//       }
-//     }
-//     /* banner */
-//     .banner {
-//       .container {
-//         width: 80%;
-//         margin-top: 10%;
-//         .hero {
-//           font-size: 1rem;
-//           letter-spacing: 1px;
-//           line-height: 1.5rem;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// //for tablets and ipads
-// @media (min-width: 561px) {
-//   #home {
-//     /* navbar */
-//     nav {
-//       padding: 1rem 1.5rem;
-//       .nav-center {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         .nav-header {
-//           // display: flex;
-//           // align-items: center;
-//           // justify-content: space-between;
-//           padding: 0;
-//           .logo {
-//             height: 1.8rem;
-//             z-index: 1000;
-//           }
-//           .nav-toggle {
-//             display: none;
-//           }
-//         }
-//         .links-container {
-//           // height: auto !important;
-//           .links {
-//             display: flex;
-//             @include gap;
-//             a {
-//               color: $primary-color;
-//               @include transition;
-//             }
-//             a:hover {
-//               color: $dark-purple;
-//             }
-//           }
-//         }
-//       }
-//     }
-//     /* fixed nav */
-//     .fixed-nav {
-//       position: fixed;
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       background-color: rgba(255, 255, 255, 0.3);
-//       backdrop-filter: blur(1rem);
-//       z-index: 3000;
-//     }
-//     /*banner*/
-//     .banner {
-//       .container {
-//         width: 50%;
-//         margin-top: 5%;
-//         margin-left: 1rem;
-//         .hero {
-//           font-size: 2rem;
-//           @include semiBold;
-//           line-height: 3rem;
-//           letter-spacing: 3px;
-//         }
-//       }
-//     }
-//   }
-// }
 
 #home {
   /* hero */
   padding: 0;
   margin: 0;
-  min-height: 100vh;
   background: linear-gradient(rgba(24, 32, 32, 0.5), rgba(0, 0, 0, 0.3)),
     url("/dist/img/img1.png");
   background-repeat: no-repeat;
@@ -201,6 +16,8 @@
   #home {
     /* navbar */
     padding: 0;
+    height: 30vh;
+    background-position: 50%;
     nav {
       background-color: rgba(255, 255, 255, 0.3);
       backdrop-filter: blur(1rem);
@@ -248,7 +65,7 @@
     }
     /* fixed nav */
     .fixed-nav {
-      position: fixed !important;
+      position: fixed;
       top: 0;
       left: 0;
       background-color: rgba(255, 255, 255, 0.3);
@@ -271,7 +88,85 @@
 
 //for tablets and ipads
 @media(min-width:561px){
-  #home{
-    
+  #home {
+    /* navbar */
+    padding: 0;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 50vh;
+    nav {
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(1rem);
+      padding: 1rem 1.5rem;
+      .nav-center {
+        .nav-header {
+          display: flex;
+          justify-content: space-between;
+          .logo {
+            height: 2rem;
+          }
+          /* hamburger toggle button */
+          .nav-toggle {
+            background: transparent;
+            display: block;
+            font-size: 2rem;
+            color: $primary-color;
+            border-color: transparent;
+            @include transition;
+            cursor: pointer;
+          }
+          .nav-toggle:hover {
+            cursor: pointer;
+            color: $dark-purple;
+          }
+        }
+        /* links */
+        .links-container {
+          height: 0;
+          overflow: hidden;
+          @include transition;
+          .links {
+            li {
+              a {
+                color: $primary-color;
+                @include transition;
+              }
+              a:hover {
+                color: $dark-purple;
+              }
+            }
+          }
+        }
+      }
+    }
+    /* fixed nav */
+    .fixed-nav {
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(1rem);
+      z-index: 1000;
+      width: 100%;
+    }
+    /* banner */
+    .banner {
+      .container {
+        margin-top: 10%;
+        margin-left: 1.2rem;
+        width: 70%;
+        .hero {
+          line-height: 3rem;
+          @include semiBold;
+          font-size: 2rem;
+        }
+      }
+    }
   }
+}
+
+//for screen sizes above 1024px
+@media(min-width:1024px){
+  
 }

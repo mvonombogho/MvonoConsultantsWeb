@@ -16,7 +16,7 @@
   //for mobile phones
   @media (max-width: 560px) {
     #clients {
-      height: 65vh;
+      height: 25vh;
       h1 {
         font-size: 1.8rem;
         margin-top: 1rem;
@@ -48,57 +48,33 @@
   //for ipads and tablets
   @media (min-width: 561px) {
     #clients {
-      height: 50vh;
+      height: 20vh;
       h1 {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
+        margin-top: 1rem;
       }
       i {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         position: absolute;
-        top: 7rem;
+        top: 7.5rem;
       }
       .fa-arrow-left {
-        left: 20%;
+        left: 5%;
       }
       .fa-arrow-right {
-        right: 20%;
+        right: 5%;
       }
       .image_container {
         display: flex;
         justify-content: center;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         padding: 1rem;
         width: 100%;
         img {
-          height: 80%;
+          height: 60%;
         }
       }
     }
   }
   
-  //with a minimum of 1024px
-  @media (min-width: 1024px) {
-    #clients {
-      height: 70vh;
-      h1 {
-        font-size: 2rem;
-      }
-      p {
-        margin-top: 0.5rem;
-        font-size: 1.3rem;
-      }
-      i {
-        font-size: 1.8rem;
-        position: absolute;
-        top: 10rem;
-      }
-      .image_container {
-        margin-top: 3.5rem;
-        width: 100%;
-        img {
-          height: 80%;
-        } 
-      }
-    }
-  }
-  
+ 
