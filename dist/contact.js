@@ -78,11 +78,11 @@ function gotData(data) {
 function sendEmail(name, email, phone, message) {
   Email.send({
     Host: "smtp.elasticemail.com",
-    Username: "israelmvono@gmail.com",
-    Password: "C832A9AE9A12350BCAFDE3FF3CB1E30638FA",
+    Username: "israelmvono@mvonoconsultants.com",
+    Password: "2C363187CC9D7D5F7FD5CD3CD4E1893296EF",
     Port: '2525',
-    To: "israelmvono@gmail.com",
-    From: "israelmvono@gmail.com",
+    To: "israelmvono@mvonoconsultants.com",
+    From: "israelmvono@mvonoconsultants.com",
     Subject: "CLIENT ENQUIRY FROM WEBSITE",
     Body: `Name: ${name} <br/> Email: ${email} <br/> Phone: ${phone} <br/> Message: ${message}`
   }).then((message) => alert(message));

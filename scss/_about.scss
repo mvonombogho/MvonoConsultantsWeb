@@ -61,4 +61,18 @@
   }
   
   
-  
+  // screen size above 1024px
+  @media(min-width:1025px){
+    #aboutUs{
+      height: 60vh;
+      .aboutUs_page{
+        margin-top: 2rem;
+        width: 90%;
+      }
+      .mission_statement{
+        li{
+          margin-top: .5rem;
+        }
+      }
+    }
+  }

@@ -34,3 +34,10 @@
     }
   }
 }
+
+//for screen sizes above 1024px
+@media(min-width:1025px){
+  #services{
+    height: 60vh;
+  }
+}

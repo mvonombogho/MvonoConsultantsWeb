@@ -126,3 +126,24 @@
       }
     }
   }
+
+  //for screen sizes above 1024px
+  @media(min-width:1025px){
+    #contact{
+      height: 90vh;
+      .contact_form_box{
+        width: 100%;
+        .contact_form{
+          width: 50%;
+          input,
+          textarea{
+            padding: 1.5rem;
+          }
+          button{
+            padding: 1rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }

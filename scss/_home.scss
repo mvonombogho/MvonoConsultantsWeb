@@ -167,6 +167,19 @@
 }
 
 //for screen sizes above 1024px
-@media(min-width:1024px){
-  
+@media(min-width:1025px){
+  #home{
+    height: 100vh;
+    .banner{
+      .container{
+        margin-top: 5%;
+        width: 70%;
+      }
+        .hero{
+          line-height: 4rem !important;
+          letter-spacing: 3px;
+          font-size: 3rem !important;
+        }
+    }
+  }
 }

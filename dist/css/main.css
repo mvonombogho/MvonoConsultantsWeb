@@ -183,6 +183,21 @@ a {
   }
 }
 
+@media (min-width: 1025px) {
+  #home {
+    height: 100vh;
+  }
+  #home .banner .container {
+    margin-top: 5%;
+    width: 70%;
+  }
+  #home .banner .hero {
+    line-height: 4rem !important;
+    letter-spacing: 3px;
+    font-size: 3rem !important;
+  }
+}
+
 #aboutUs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,6 +259,19 @@ a {
   }
   #aboutUs .aboutUs_page .mission_statement li {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  #aboutUs {
+    height: 60vh;
+  }
+  #aboutUs .aboutUs_page {
+    margin-top: 2rem;
+    width: 90%;
+  }
+  #aboutUs .mission_statement li {
+    margin-top: .5rem;
   }
 }
 
@@ -341,6 +369,12 @@ a {
   }
 }
 
+@media (min-width: 1025px) {
+  #clients {
+    height: 40vh;
+  }
+}
+
 #services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,6 +414,12 @@ a {
   }
   #services h2 {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  #services {
+    height: 60vh;
   }
 }
 
@@ -545,6 +585,26 @@ a {
     padding: 0.3rem;
     font-size: .8rem;
     width: 30%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #contact {
+    height: 90vh;
+  }
+  #contact .contact_form_box {
+    width: 100%;
+  }
+  #contact .contact_form_box .contact_form {
+    width: 50%;
+  }
+  #contact .contact_form_box .contact_form input,
+  #contact .contact_form_box .contact_form textarea {
+    padding: 1.5rem;
+  }
+  #contact .contact_form_box .contact_form button {
+    padding: 1rem;
+    font-size: 1rem;
   }
 }
 

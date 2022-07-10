@@ -77,4 +77,9 @@
     }
   }
   
- 
+ //screen sizes above 1024px
+ @media(min-width:1025px){
+  #clients{
+    height: 40vh;
+  }
+ }
